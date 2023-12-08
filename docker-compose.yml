@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    image: todo_app
+    build: .
+    container_name: my_todo_app
+    restart: always
+    ports:
+      - 5000:80
+    volumes:
+      - .:/app   
