@@ -11,7 +11,7 @@
  RUN pip install --trusted-host pypi.python.org -r requirements.txt   
 
  # make port 80 available outside the container 
- EXPOSE 80
+ EXPOSE 5000
 
  # Define your environmental variables
  ENV NAME world

@@ -1,0 +1,100 @@
+/* static/styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #999ea2;
+    /* display: flex; */
+    /* justify-content: flex-start; Align content to the left */
+}
+
+h1 {
+    color: #343a40;
+    text-align: center;
+    font-size: 450%;
+}
+
+form {
+    margin-bottom: 20px;
+    text-align: left; /* Align form to the left */
+}
+
+input {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed-task {
+    color: #28a745; /* Adjust the color as needed */
+}
+
+s {
+    color: #888;
+}
+
+a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.remove-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
+
+.hide-button {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.hide-button:hover {
+    background-color: #5a6268;
+}
+

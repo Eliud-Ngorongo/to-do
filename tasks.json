@@ -1,1 +1,1 @@
-[{"task": "Host this app on AWS", "done": false}, {"task": "share a blog post on medium for this post", "done": false}]
+[{"task": "Fix moving up and down", "done": false, "hidden": true}, {"task": "Host this on AWS", "done": false}, {"task": "Add styles", "done": true}, {"task": "Host this app on AWS", "done": true, "hidden": true}, {"task": "share a blog post on medium for this post", "done": true, "hidden": true}, {"task": "New tasks", "done": true}]
