@@ -68,7 +68,11 @@ def undo_completion():
             save_tasks(tasks)
             return redirect(url_for('index'))
     
-    return 'Task not found', 404
+    return 'Task not found', 404 
+# add a new hello route
+@app.route('/hello')
+def hello():
+  return "hello world!"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)

@@ -1,11 +1,18 @@
-version: '3'
+version: '2'
 services:
-  web:
-    image: todo_app
-    build: .
+  todo-app:
+    image: eliudnjenga/todo_app
+    # build: . # this can be skipped since this app is pretty simple, we also have it fetching any changes directly from app.py
+    # cpu_shares: 100
+    # mem_limit: 262144000
     container_name: my_todo_app
     restart: always
     ports:
-      - 5000:5000
-    volumes:
-      - .:/app   
+      - 80:5000
+    logging:
+       driver: awslogs
+       options:
+        awslogs-group: todo
+        awslogs-region: af-south-1
+        awslogs-stream-prefix: todo
+   

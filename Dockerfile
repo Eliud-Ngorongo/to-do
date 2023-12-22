@@ -10,7 +10,7 @@
  # install the needed dependencies from the official python webiste
  RUN pip install --trusted-host pypi.python.org -r requirements.txt   
 
- # make port 80 available outside the container 
+ # make port 5000 available outside the container 
  EXPOSE 5000
 
  # Define your environmental variables
