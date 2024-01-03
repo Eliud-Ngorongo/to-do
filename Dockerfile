@@ -1,21 +1,14 @@
- # Python will be our base image
- FROM python:3.8-slim
+FROM python:3.8-alpine as build
 
- #create a working directory
- WORKDIR /app
+WORKDIR /app
 
- #copy all the files in the current directory to the container
- COPY . /app
+COPY . /app
 
- # install the needed dependencies from the official python webiste
- RUN pip install --trusted-host pypi.python.org -r requirements.txt   
+RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
- # make port 5000 available outside the container 
- EXPOSE 5000
 
- # Define your environmental variables
- ENV NAME world
+EXPOSE 5000
 
-# Run app.py when the container launches
+ENV NAME world
+
 CMD ["python3", "app.py"]
-
